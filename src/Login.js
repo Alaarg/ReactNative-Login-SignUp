@@ -98,6 +98,7 @@ export default class Login extends Component {
             onChangeText={Text => this.password(Text)}
             placeholder="كلمة السر "
             textContentType="password"
+            secureTextEntry={true}
           />
           <Button title="دخول" onPress={this.loginBttn} />
           <Text

@@ -96,6 +96,7 @@ export default class Login extends Component {
             onChangeText={Text => this.password(Text)}
             textContentType="password"
             placeholder="كلمة السر "
+            secureTextEntry={true}
           />
           <TextInput
             style={{
@@ -107,6 +108,7 @@ export default class Login extends Component {
             placeholder=" اعادة كتابة كلمة السر "
             onChangeText={Text => this.reTypepassword(Text)}
             textContentType="password"
+            secureTextEntry={true}
           />
 
           <Button title="أنشاء حساب" onPress={this.signUpBttn} />
